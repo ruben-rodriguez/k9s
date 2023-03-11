@@ -286,10 +286,11 @@ var expectedConfig = `k9s:
   readOnly: true
   noExitOnCtrlC: false
   noIcons: false
+  skipLatestRevCheck: false
   logger:
     tail: 500
     buffer: 800
-    sinceSeconds: 60
+    sinceSeconds: 300
     fullScreenLogs: false
     textWrap: false
     showTime: false
@@ -384,10 +385,11 @@ var resetConfig = `k9s:
   readOnly: false
   noExitOnCtrlC: false
   noIcons: false
+  skipLatestRevCheck: false
   logger:
     tail: 200
     buffer: 2000
-    sinceSeconds: 60
+    sinceSeconds: 300
     fullScreenLogs: false
     textWrap: false
     showTime: false
